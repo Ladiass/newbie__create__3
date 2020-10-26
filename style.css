@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+*,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Coming Soon', cursive;
+    box-sizing: border-box;
+}
+body{
+    background: url(./img.png) no-repeat;
+    background-size: cover;
+}
+.signin_box{
+    width: 300px;
+    height: 350px;
+    background: rgba(52, 73, 94,.8);
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+form{
+    width: 180px;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    left: 60px;
+
+    /* position: relative;
+    top: 23%;
+    left: 20%; */
+    
+}
+h2{
+    margin: 20px;
+    font-size: 35px;
+    color: white;
+    animation: animation1 3s infinite;
+}
+input{
+    position: relative;
+    left: -12px;
+    border: none;
+    margin: 5px;
+    border: 3px solid rgba(46, 204, 113,1.0);
+    background: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px 20px;
+    width: 200px;
+    transition: .5s;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+button[type="button"]{
+    position: relative;
+    left: 7px;
+    background: rgba(46, 204, 113,1.0);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 20px;
+    outline: none;
+    transition: .3s;
+    border: 3px solid rgba(46, 204, 113,1.0);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button[type="button"]:active{
+    
+    border: 3px solid rgba(46, 204, 113,.8);
+    background: rgba(46, 204, 113,.8);
+    box-shadow: 0 0 5px rgba(46, 204, 113,.8) , 0 0 15px rgba(46, 204, 113,.8);
+}
+
+input:focus {
+    border: 3px solid rgba(231, 76, 60,1.0);
+    box-shadow: 0 0 5px rgba(231, 76, 60,1.0) , 0 0 15px rgba(231, 76, 60,1.0) ,0 0 5px rgba(231, 76, 60,1.0) inset , 0 0 15px rgba(231, 76, 60,1.0)inset;
+    background: rgba(78, 78, 78, 0.267);
+}
+h2:hover{
+    text-shadow: 0 0 2px rgba(255, 255, 255, .8) , 0 0 6px rgba(255, 255, 255, .7);
+}
+
+@keyframes animation1{
+    0%, 20% ,30% , 60% , 70.1% , 90%{
+        text-shadow: 0 0 2px rgba(255, 255, 255, .8) , 0 0 12px rgba(255, 255, 255, .7);
+    }
+    10% , 40% , 50% , 70% , 96%{
+        text-shadow: 0 0 5px rgba(255, 255, 255, .8) , 0 0 15px rgba(255, 255, 255, .7);
+    }
+}
